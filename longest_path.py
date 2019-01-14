@@ -2,7 +2,6 @@ import numpy as np
 
 
 def lp(classes):
-    print(len(classes))
     n = len(classes)
     dist = np.copy(classes)
     print(dist)
