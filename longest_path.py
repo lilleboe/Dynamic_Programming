@@ -2,6 +2,7 @@ import numpy as np
 
 
 def lp(classes):
+
     n = len(classes)
     dist = np.copy(classes)
     print(dist)
@@ -33,6 +34,19 @@ if __name__ == '__main__':
          [i, i, i, i, i, 0, 1, i],
          [i, i, i, i, i, i, 0, i],
          [i, i, i, i, i, i, i, 0]]
+
+    s = [[0, 1, 1, 1, i, i, i, i, i, i, i, i],
+         [i, 0, i, i, 1, i, 1, i, i, i, i, i],
+         [i, i, 0, 1, i, i, i, i, i, i, i, i],
+         [i, i, i, 0, i, i, i, i, i, i, i, i],
+         [i, i, i, i, 0, i, i, i, 1, i, i, i],
+         [i, 1, i, i, i, 0, i, i, i, i, i, i],
+         [i, i, i, i, i, i, 0, 1, i, i, i, i],
+         [i, i, i, i, i, i, i, 0, i, i, i, i],
+         [i, i, i, i, i, i, i, i, 0, 1, i, i],
+         [i, i, i, i, i, i, i, i, i, 0, i, i],
+         [1, i, i, i, i, i, i, i, i, i, 0, i],
+         [i, i, i, i, i, i, i, i, i, i, i, 0]]
 
     print(s)
     print(lp(s))
